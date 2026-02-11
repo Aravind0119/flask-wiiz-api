@@ -131,7 +131,7 @@ app = Flask(__name__)
 VALID_API_KEY = os.getenv("API_KEY")
 
 # POINT THIS TO YOUR ACTUAL FOLDER
-UPLOAD_FOLDER = r"C:\Users\FA2703TX\Desktop\flask-wiiz-api\uploads"
+UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 def is_valid_api_key():
@@ -184,5 +184,6 @@ def read_all_files():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
+
 
 
