@@ -1,4 +1,0 @@
-entity_id,total_exposure,number_of_loans,delinquency_flag,credit_score,last_reported_date
-E1001,4200000,2,False,720,2026-01-15
-E1002,180000,1,False,690,2026-01-15
-E1003,2600000,1,True,610,2026-01-15
