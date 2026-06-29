@@ -14,7 +14,7 @@ VALID_API_KEY = os.getenv("API_KEY")
 UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
-def is_valid_api_key():
+def is_valid_api_key()
     # Try header first
     api_key = request.headers.get("x-api-key")
 
