@@ -1,0 +1,12 @@
+name: Simulated Schema Mismatch
+on: workflow_dispatch
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run migration
+        run: |
+          echo "Applying migration 2024_01_schema.sql..."
+          echo "ERROR: column 'premium_amount' does not exist in table 'policies'"
+          exit 1
